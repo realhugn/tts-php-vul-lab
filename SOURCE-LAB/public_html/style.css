@@ -1,0 +1,193 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+}
+
+:root {
+    --white: hsl(252, 30%, 100%);
+    --light: hsl(252, 30%, 95%);
+    --gray: hsl(252, 15%, 65%);
+    --primay: hsl(252, 75%, 60%);
+    --success: hsl(120, 95%, 65%);
+    --danger: hsl(0, 95%, 65%);
+    --dark: hsl(252, 30%, 10%);
+    --black: hsl(252, 30%, 7%);
+    --border-radius: 2rem;
+    --card-border-radius: 1rem;
+    --btn-padding: 0.6rem 1rem;
+    --search-padding: 0.6rem 1rem;
+    --card-padding: 1rem;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: var(--black);
+    background: var(--light);
+    overflow-x: hidden;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+nav {
+    width: 100%;
+    justify-content: space-between;
+    position: fixed;
+    padding: 0.7rem 0;
+    z-index: 10;
+    background-color: var(--white);
+    box-shadow: 1px 1px 5px #aaaaaa;
+}
+
+nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn {
+    width: fit-content;
+    display: inline-block;
+    color: white;
+    padding: var(--btn-padding);
+    font-weight: 500;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: all 300ms ease;
+    font-size: 0.9rem;
+    margin-left: 20px;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn-primary {
+    background: hsl(252, 75%, 60%);
+}
+
+nav .search-bar {
+    background-color: var(--gray);
+    border-radius: var(--border-radius);
+    padding: var(--search-padding)
+}
+
+nav .search-bar form input[type="search"] {
+    background: transparent;
+    width: 30vw;
+    font-size: 0.9rem;
+    color: var(--dark)
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 90%;
+}
+
+.middle {
+    padding-top: 100px;
+    text-align: center;
+}
+
+.create-post {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.create {
+    width: fit-content;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+}
+
+textarea {
+    width: 50%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical;
+    /* Allow the user to vertically resize the textarea (not horizontally) */
+    display: inline-block;
+}
+
+.btn-post {
+    height: fit-content;
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.nfcontent {
+    display: block;
+    min-height: 200px;
+    border: 1px black solid;
+}

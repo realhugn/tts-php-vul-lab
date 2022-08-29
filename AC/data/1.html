@@ -1,0 +1,247 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Comatible">
+    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="/css/register.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <script src="https://kit.fontawesome.com/6161ff573e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+    <script>
+        document.onkeydown = function(evt) {
+            var keyCode = evt ? (evt.which ? evt.which : evt.keyCode) : event.keyCode;
+            if (keyCode == 13) {
+                //your function call here
+                document.search.submit();
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <h2 class="log">
+                <a style="text-decoration: none;" href="http://192.168.56.135:2009/index.php">DZ0SA </a>
+            </h2>
+            <div class="search-bar" style="width:fit-content">
+                <i class=" uil uil-search"></i>
+                <form name="search" action="http://192.168.56.135:2009/search.php" method="get" style="display: inline-block;">
+                    <input type="search" placeholder="Search" name="search">
+                </form>
+            </div>
+            <div class="create">
+                <div class="col-12">
+                    Welcome <a href="./profile.php/?id=2">test test </a>                </div>
+                                    <a href="http://192.168.56.135:2009/logout.php" class='btn btn-primary' for="createPost" style="color:white;">
+                        Logout
+                    </a>
+                            </div>
+        </div>
+    </nav>
+<head>
+    <title>ADMIN ADMIN</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+    .modal {
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%;
+        /* Full width */
+        height: 100%;
+        /* Full height */
+        overflow: auto;
+        /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0);
+        /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.4);
+        /* Black w/ opacity */
+        padding-top: 60px;
+    }
+
+    /* Modal Content/Box */
+    .modal-content {
+        background-color: #fefefe;
+        margin: 5px auto;
+        /* 15% from the top and centered */
+        border: 1px solid #888;
+        width: 80%;
+        /* Could be more or less, depending on screen size */
+    }
+
+    /* The Close Button */
+    .close {
+        /* Position it in the top right corner outside of the modal */
+        position: absolute;
+        right: 25px;
+        top: 100px;
+        color: #000;
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    /* Close button on hover */
+    .close:hover,
+    .close:focus {
+        color: red;
+        cursor: pointer;
+    }
+
+    /* Add Zoom Animation */
+    .animate {
+        -webkit-animation: animatezoom 0.6s;
+        animation: animatezoom 0.6s
+    }
+
+    @-webkit-keyframes animatezoom {
+        from {
+            -webkit-transform: scale(0)
+        }
+
+        to {
+            -webkit-transform: scale(1)
+        }
+    }
+
+    @keyframes animatezoom {
+        from {
+            transform: scale(0)
+        }
+
+        to {
+            transform: scale(1)
+        }
+    }
+
+    td {
+        border: 1px solid black;
+    }
+</style>
+<main class="middle">
+    <h1>
+        Thong tin :
+    </h1>
+    <div>
+        Ten: ADMIN</br>
+        Ho: ADMIN    </div>
+    <button class="edit_btn" onclick="document.getElementById('user2').style.display='block'">edit</button>
+    <div id='user2' class="modal">
+        <span onclick="document.getElementById('user2').style.display='none'" class=" close" title="Close Modal">&times;</span>
+        <div class="modal-content">
+            <div class="middle" style="padding-top:100px;">
+                <form method="post">
+
+                    <label class="col-25" for="lname">First Name</label>
+                    <input type="text" id="firstname" name="fname" placeholder="Your first name.." value="ADMIN">
+
+                    <label class="col-25" for="lname">Last Name</label>
+                    <input type="text" id="lastname" name="lname" placeholder="Your last name.." value="ADMIN">
+
+                    <label class="col-25" for="fname">Old Password</label>
+                    <input type="password" id="password" name="oldpw" placeholder="Your old password ...">
+
+                    <label class="col-25" for="fname">New Password</label>
+                    <input type="password" id="password" name="newpw" placeholder="Your new password ...">
+
+                    <input type="submit" value="edit" name="sub1" style="width: fit-content;">
+                                    </form>
+            </div>
+        </div>
+    </div>
+    </br>POSTS:
+    <table>
+        <thead>
+            <tr>
+                <th>TITLE</th>
+                <th>CONTENT</th>
+                <th colspan="2">Action</th>
+            </tr>
+        </thead>
+                    <tr>
+                <td>test</td>
+                <td>a</td>
+                <td>
+                    <button class="edit_btn" onclick="document.getElementById(1).style.display='block'">edit</button>
+                    <div id=1 class="modal">
+                        <span onclick="document.getElementById(1).style.display='none'" class="close" title="Close Modal">&times;</span>
+                        <!-- Modal Content -->
+                        <div class="modal-content">
+                            <div class="middle" style="padding-top:100px;">
+                                <div id='insert-post'>
+                                    <form class="create-post" method="post">
+                                        <label> Title</label>
+                                        <input class='title' placeholder="Enter title here" name="title" value="test">
+                                        <label>Content</label>
+                                        <textarea type="text" placeholder="What's on your mind ?..." class="form-control" style="height:100px" name="content">a </textarea>
+                                        <input class="btn-post" value="Post" type="submit" name="edit1">
+                                    </form>
+                                </div>
+                                                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <a href="http://192.168.56.135:2009/profile.php/?id=1&del=1" class="edit_btn" onclick='return confirm("are you sure")'>delete</a>
+                </td>
+                
+                            <script>
+                                var modal = document.getElementById(1);
+                                window.onclick = function(event) {
+                                    if (event.target == modal) {
+                                        modal.style.display = 'none';
+                                    }
+                                }
+                            </script>            </tr>
+                    <tr>
+                <td>test</td>
+                <td>b</td>
+                <td>
+                    <button class="edit_btn" onclick="document.getElementById(2).style.display='block'">edit</button>
+                    <div id=2 class="modal">
+                        <span onclick="document.getElementById(2).style.display='none'" class="close" title="Close Modal">&times;</span>
+                        <!-- Modal Content -->
+                        <div class="modal-content">
+                            <div class="middle" style="padding-top:100px;">
+                                <div id='insert-post'>
+                                    <form class="create-post" method="post">
+                                        <label> Title</label>
+                                        <input class='title' placeholder="Enter title here" name="title" value="test">
+                                        <label>Content</label>
+                                        <textarea type="text" placeholder="What's on your mind ?..." class="form-control" style="height:100px" name="content">b </textarea>
+                                        <input class="btn-post" value="Post" type="submit" name="edit2">
+                                    </form>
+                                </div>
+                                                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <a href="http://192.168.56.135:2009/profile.php/?id=1&del=2" class="edit_btn" onclick='return confirm("are you sure")'>delete</a>
+                </td>
+                
+                            <script>
+                                var modal = document.getElementById(2);
+                                window.onclick = function(event) {
+                                    if (event.target == modal) {
+                                        modal.style.display = 'none';
+                                    }
+                                }
+                            </script>            </tr>
+            </table>
+
+</main>
+</body>
+
+</html>
+ 
